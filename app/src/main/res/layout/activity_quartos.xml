@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background"
+    tools:context=".perfil">
+
+<!--    Parte superior-->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="-37dp" />
+
+    <TextView
+        android:id="@+id/normal_title"
+        android:text="@string/quartos"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/view_solteiro"
+        style="@style/quartos_sobre"/>
+    <!--    Parte superior-->
+
+
+<!--    //card solteiro-->
+    <View
+        android:id="@+id/view_solteiro"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        style="@style/ContainerComponents2" />
+    <View
+        android:id="@+id/containerComponents"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        style="@style/ContainerComponents2" />
+    <ImageView
+        android:id="@+id/solteiro"
+        android:layout_width="368dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/solteiro"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/solteiro"
+        style="@style/button_reservar" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suite cubo - Creative"
+        android:textSize="18sp"
+        android:textColor="@color/blue2"
+        android:textStyle="italic"
+        android:layout_marginRight="190dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/solteiro"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reservar_solteiro"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="@string/consultar"
+        android:textColor="@color/white"
+        android:background="@drawable/button_reservar"
+        android:textAllCaps="false"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/solteiro"/>
+<!--    //card solteiro-->
+
+
+<!--card normal-->
+    <View
+        android:id="@+id/view_normal"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_solteiro"
+        style="@style/ContainerComponents2"/>
+    <ImageView
+        android:id="@+id/normal"
+        android:layout_width="368dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/normal"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/view_solteiro"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dsafasfaf"
+        android:layout_marginRight="250dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/normal"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reservar_normal"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="@string/consultar"
+        android:textColor="@color/white"
+        android:background="@drawable/button_reservar"
+        android:textAllCaps="false"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/normal"/>
+    <!--    card normal-->
+
+
+<!--card suite-->
+    <View
+        android:id="@+id/view_suite"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_normal"
+        style="@style/ContainerComponents2"/>
+    <ImageView
+        android:id="@+id/suite"
+        android:layout_width="368dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/suite"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/view_normal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dsafasfaf"
+        android:layout_marginRight="250dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/suite"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reservar_suite"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="@string/consultar"
+        android:textColor="@color/white"
+        android:background="@drawable/button_reservar"
+        android:textAllCaps="false"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suite"/>
+    <!--card suite-->
+
+
+
+    <!--card suite22-->
+    <View
+        android:id="@+id/view_suite2"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_suite"
+        style="@style/ContainerComponents2"/>
+    <ImageView
+        android:id="@+id/suite2"
+        android:layout_width="368dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/suite2"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/view_suite" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dsafasfaf"
+        android:layout_marginRight="250dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/suite2"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reservar_suite2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_reservar"
+        android:text="@string/consultar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suite2" />
+    <!--card suite22-->
+
+
+
+    <!--card vip-->
+    <View
+        android:id="@+id/view_vip"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_suite2"
+        style="@style/ContainerComponents2" />
+    <ImageView
+        android:id="@+id/vip"
+        android:layout_width="368dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/vip"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/view_suite2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dsafasfaf"
+        android:layout_marginRight="250dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/vip"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reservar_vip"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="@string/consultar"
+        android:textColor="@color/white"
+        android:background="@drawable/button_reservar"
+        android:textAllCaps="false"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vip"/>
+    <!--card vip-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

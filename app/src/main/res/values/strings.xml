@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="entrar">Entrar</string>
+    <string name="text_cadastro">Crie uma conta clicando aqui.</string>
+    <string name="senha">Senha:</string>
+    <string name="senha2">Confirmar senha:</string>
+    <string name="rg">RG:</string>
+    <string name="cpf">CPF:</string>
+    <string name="email">E-mail:</string>
+    <string name="nome">Nome completo:</string>
+    <string name="title_cadastro">Cadastre-se</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="deslogar">Deslogar</string>
+    <string name="title_activity_menu_principal">menu_principal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="perfil">Perfil</string>
+    <string name="quartos">Quartos</string>
+    <string name="reservar">Reservar</string>
+    <string name="reservas">Reservas</string>
+    <string name="checkin">Realizar check-in</string>
+    <string name="consultar">Ver detalhes</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:orientation="horizontal"
+    tools:context=".quartos"
+    android:background="@drawable/background"
+    android:fadeScrollbars="false">
+    <include layout="@layout/toolbar"/>
+
+
+    <!--    <ImageView-->
+    <!--        android:contentDescription="adsdad"-->
+    <!--        android:id="@+id/layout"-->
+    <!--        android:src="@drawable/button"-->
+    <!--        android:layout_width="400dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        style="@style/layout"-->
+    <!--        />-->
+
+    <TextView
+        android:id="@+id/normal_title"
+        android:text="Quartos"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layout"
+        style="@style/quartos_sobre"/>
+
+    //card
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_marginLeft="100dp"
+        android:animateLayoutChanges="true"
+        android:layout_marginRight="100dp"
+        card_view:cardCornerRadius="10dp"/>
+    <!--        <ImageView-->
+    <!--            android:id="@+id/solteiro"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@drawable/solteiro"-->
+    <!--            android:layout_marginBottom="20dp"/>-->
+    <!--        <TextView-->
+    <!--                android:id="@+id/quartos_title"-->
+    <!--                android:text="Quarto solteiro"-->
+    <!--                android:textColor="@color/blue"-->
+    <!--                android:textSize="20sp"-->
+    <!--                android:textStyle="italic"-->
+    <!--                android:layout_marginBottom="40dp"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"/>-->
+    <!--        <androidx.appcompat.widget.AppCompatButton-->
+    <!--            android:layout_width="150dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Fazer uma reserva"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            android:background="@drawable/button_reservar"-->
+    <!--            android:layout_marginTop="295dp"-->
+    <!--            android:layout_marginLeft="125dp"/>-->
+    <!--        //card-->
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        android:layout_gravity="center"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:animateLayoutChanges="true"
+        android:layout_marginRight="100dp"
+        card_view:cardCornerRadius="10dp">
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
