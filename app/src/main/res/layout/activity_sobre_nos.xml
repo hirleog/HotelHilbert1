@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sobre_nos">
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:id="@+id/reference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sobre_nos"
+        android:text="Sobre nós"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/pim"
+        style="@style/quartos_sobre"/>
+
+    <TextView
+        android:id="@+id/pim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="PIM 3º SEMESTRE ADS"
+        android:textAlignment="center"
+        android:textColor="@color/light"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sobre_nos" />
+
+    <TextView
+        android:id="@+id/detalhes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/detalhes_sobre_nos"
+        android:textAlignment="center"
+        android:textSize="19sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@+id/pim"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/membros_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Membros do PIM"
+        android:textAlignment="center"
+        android:textColor="@color/light"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/detalhes"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/membros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/membros"
+        android:textAlignment="center"
+        android:textSize="19sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@+id/membros_title"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/logo_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/team_logo"
+        app:layout_constraintTop_toBottomOf="@+id/membros" />
+
+    <TextView
+        android:id="@+id/localizacao_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Localização"
+        android:textAlignment="center"
+        android:textColor="@color/light"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/logo_team"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/logohh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/logohg"
+        app:layout_constraintTop_toBottomOf="@id/localizacao_text"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/localizacao_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/local"
+        app:layout_constraintTop_toBottomOf="@id/logohh"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
