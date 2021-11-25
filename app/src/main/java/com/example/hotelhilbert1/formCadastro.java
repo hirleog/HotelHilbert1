@@ -21,8 +21,6 @@ Connection connection;
     private EditText edit_nome, edit_cpf, edit_email, edit_senha;
     private androidx.appcompat.widget.AppCompatButton btn_cadastrar;
 
-
-
     String[] mensagens = {"Preencha todos os campos!", "Cadastro realizado com sucesso!"};
 
     @Override
