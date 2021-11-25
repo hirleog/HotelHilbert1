@@ -11,6 +11,7 @@ public class
 detalhes_suite2 extends AppCompatActivity {
 
     private ImageView right_icon;
+    private androidx.appcompat.widget.AppCompatButton reservar_suite2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +20,7 @@ detalhes_suite2 extends AppCompatActivity {
 
         getSupportActionBar().hide();
         home();
-
+        reservar();
 
         right_icon.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,8 +29,19 @@ detalhes_suite2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        reservar_suite2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(detalhes_suite2.this, fazer_reserva.class);
+                startActivity(intent);
+            }
+        });
     }
     public void home() {
         right_icon = findViewById(R.id.right_icon);
+    }
+    public void reservar() {
+        reservar_suite2  = findViewById(R.id.btn_suite2);
     }
 }

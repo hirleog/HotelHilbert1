@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hotelhilbert1">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,16 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HotelHilbert1">
         <activity
-            android:name=".perfil"
+            android:name=".sobre_nos"
             android:exported="false" />
         <activity
-            android:name=".quartos"
+            android:name=".fazer_reserva"
+            android:exported="false" />
+        <activity
+            android:name=".formCadastro"
             android:exported="false" />
         <activity
             android:name=".detalhes_vip"
             android:exported="false" />
         <activity
-            android:name=".detalhes_suite2"
+            android:name=".quartos"
             android:exported="false" />
         <activity
             android:name=".detalhes_suite"
@@ -37,13 +43,13 @@
             android:name=".FormLogin"
             android:exported="false" />
         <activity
-            android:name=".formCadastro"
+            android:name=".detalhes_suite2"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name=".fazer_reserva"
+            android:name=".perfil"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

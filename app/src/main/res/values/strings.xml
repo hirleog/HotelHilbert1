@@ -24,4 +24,8 @@
     <string name="reservas">Reservas</string>
     <string name="checkin">Realizar check-in</string>
     <string name="consultar">Ver detalhes</string>
+    <string name="detalhes_sobre_nos">Hotel Hilbert é um projeto desenvolvido a pedido da faculdade para o PIM do terceiro semestre no curso de analise e desenvolvimento de sistemas onde se faz necessario inicialmente 3 protótipos, Versão Desktop, Versão Web e a Versão Mobile que você está agora.</string>
+    <string name="membros">Este projeto do pim está sendo desenvolvido pelo grupo Dev-Team  das turmas DS3A33 e DS4A33 do tatuapé no periodo da manhã.
+
+Team Dev é uma equipe formada pelos alunos Alberto, Cristian, Darllan, Keven, Kaio e Guilherme da Universidade Paulista, cujo tem como projeto criar um site de hotel.</string>
 </resources>
